@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/normalize.css" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+        text-align: center;
+      }
+      div {
+        max-width: 1000px;
+        height: 100vh;
+        width: 100vh;
+        position: relative;
+        /* border: 2px solid blue; */
+        /* display: inline-block; */
+        overflow: hidden;
+        margin: 0 auto;
+      }
+      img {
+        max-width: 80%;
+      }
+      .foto1 {
+        position: absolute;
+        opacity: 1;
+        top: 120px;
+        left: 60px;
+        z-index: 3;
+        box-shadow: -7px 5px 20px 10px rgb(200, 193, 193);
+      }
+
+      .foto2 {
+        position: absolute;
+        opacity: 0.6;
+        top: 140px;
+        left: 120px;
+        z-index: 2;
+        box-shadow: -7px 5px 20px 10px rgb(200, 193, 193);
+      }
+
+      .foto3 {
+        position: absolute;
+        opacity: 0.4;
+        top: 220px;
+        left: 180px;
+        z-index: 1;
+        box-shadow: -7px 5px 20px 10px rgb(200, 193, 193);
+      }
+      .foto2:hover {
+        opacity: 1;
+        z-index: 4;
+      }
+      .foto3:hover {
+        opacity: 1;
+        z-index: 4;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div>
+        <img
+          class="foto1"
+          src="/images/chang-qing-2YQoKbyGvDc-unsplash.jpg"
+          alt="chang1"
+        />
+        <img
+          class="foto2"
+          src="/images/Forest-Green-hd-wallpaper-129105.jpg"
+          alt="forest2"
+        />
+        <img
+          class="foto3"
+          src="/images/john-fowler-bgGr1eKlYNw-unsplash.jpg"
+          alt="john3"
+        />
+      </div>
+    </main>
+  </body>
+</html>
